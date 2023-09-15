@@ -85,7 +85,7 @@ main {
   scroll-snap-type: y mandatory;
   scroll-behavior: auto;
 }
-section {
+main section {
   outline-offset: -0.2rem;
   display: flex;
   scroll-snap-align: start;
@@ -95,39 +95,39 @@ section {
   height: 100%;
   overflow: auto;
 }
-section .flex-body {
+main section .flex-body {
   display: flex;
   flex-direction: column;
 }
-section h1{
+main section h1{
   font-size: 200%;
   margin:auto;
   justify-self: center;
   align-self: center;
 }
-section table {
+main section table {
   width: 90%;
   margin: 0 auto;
   border-collapse: collapse;
 }
-section table caption {
+main section table caption {
   font-size: 80%;
 }
-section table :is(td,th){ border:solid 0.1rem color-mix(in srgb, var(--primary), transparent 60%); }
+main section table :is(td,th){ border:solid 0.1rem color-mix(in srgb, var(--primary), transparent 60%); }
 
-section h2 {
+main section h2 {
   margin-top: 15%;
   margin-bottom: 10%;
 }
-section :is(h1,h2,h3,h4,h5,h6) {
+main section :is(h1,h2,h3,h4,h5,h6) {
   padding: 0.5rem;
   text-align: center;
 }
-section p {
+main section p {
   margin: 0.5rem;
 }
 
-#scroll-controller { 
+main #scroll-controller { 
   display: flex;
   flex-direction: column;
   position: fixed; right:0;
@@ -189,7 +189,7 @@ html:not(.mobile) #scroll-controller button span.mobile, html.mobile span.pc {
     scroll-snap-type: x mandatory;
   }
 
-  section {
+  main section {
     display: flex;
     flex-direction: column;
     width: 100%;
